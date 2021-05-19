@@ -115,6 +115,15 @@ gem "vault", "~> 0.16" # Used to store secrets
 gem "wcag_color_contrast", "~> 0.1" # Detect contrast of colors to determine readability and a11y.
 gem "webpacker", "~> 5.3.0" # Use webpack to manage app-like JavaScript modules in Rails
 
+# added capistrano for production deployment
+gem "capistrano", "~> 3.11"
+gem "capistrano-passenger", "~> 0.2.0"
+gem "capistrano-rails", "~> 1.4"
+gem "capistrano-rbenv", "~> 2.1", ">= 2.1.4"
+# Other support for capistrano
+gem "bcrypt_pbkdf", "~> 1.0"
+gem "ed25519", "~> 1.2"
+
 group :development do
   gem "better_errors", "~> 2.9" # Provides a better error page for Rails and other Rack apps
 
