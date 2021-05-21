@@ -5,7 +5,7 @@ set :application, "forem"
 set :repo_url, "git@github.com:samuelsonokoi/forem.git"
 
 # Deploy to the user's home directory
-set :deploy_to, "/sharply/#{fetch :application}"
+set :deploy_to, "/root/#{fetch :application}"
 
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", ".bundle", "public/system",
        "public/uploads"
@@ -18,7 +18,7 @@ set :keep_releases, 5
 # append :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+ask :branch, `git rev-parse --abbrev-ref samuelsonokoi/prod`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"

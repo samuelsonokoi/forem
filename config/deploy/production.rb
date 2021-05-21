@@ -6,6 +6,7 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+server "159.203.100.104", user: "root", roles: %w[app web]
 
 # role-based syntax
 # ==================
@@ -53,5 +54,3 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-
-server "174.138.57.210", user: "root", roles: %w[app db web]
