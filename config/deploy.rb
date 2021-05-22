@@ -5,7 +5,8 @@ set :application, "sharply"
 set :repo_url, "git@github.com:samuelsonokoi/forem.git"
 
 # Deploy to the user's home directory
-set :deploy_to, "/home/rails/#{fetch :application}"
+# set :deploy_to, "/home/rails/#{fetch :application}"
+set :deploy_to, "/root/#{fetch :application}"
 
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", ".bundle", "public/system",
        "public/uploads"
