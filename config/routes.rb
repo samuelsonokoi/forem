@@ -1,6 +1,9 @@
 # rubocop:disable Metrics/BlockLength
 
 Rails.application.routes.draw do
+  # configure default host
+  default_url_options host: "sharply.dev"
+
   use_doorkeeper do
     controllers tokens: "oauth/tokens"
   end
