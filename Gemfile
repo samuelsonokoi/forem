@@ -119,7 +119,8 @@ gem "webpacker", "~> 5.4.0" # Use webpack to manage app-like JavaScript modules 
 gem "capistrano", "~> 3.11"
 gem "capistrano-passenger", "~> 0.2.0"
 gem "capistrano-rails", "~> 1.4"
-gem "capistrano-rbenv", "~> 2.1", ">= 2.1.4"
+gem "capistrano-rvm", "~> 0.1.2"
+# gem "capistrano-rbenv", "~> 2.1", ">= 2.1.4"
 # Other support for capistrano
 gem "bcrypt_pbkdf", "~> 1.0"
 gem "ed25519", "~> 1.2"
