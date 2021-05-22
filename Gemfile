@@ -144,6 +144,13 @@ group :development do
   gem "yard", "~> 0.9.26" # YARD is a documentation generation tool for the Ruby programming language
   gem "yard-activerecord", "~> 0.0.16" # YARD extension that handles and interprets methods used when developing applications with ActiveRecord
   gem "yard-activesupport-concern", "~> 0.0.1" # YARD extension that brings support for modules making use of ActiveSupport::Concern
+  # capistrano configuration
+  # gem 'capistrano',         require: false
+  # gem 'capistrano-rbenv',     require: false
+  # gem 'capistrano-rails',   require: false
+  # gem 'capistrano-bundler', require: false
+  # gem 'capistrano3-puma',   require: false
+  # gem 'capistrano-passenger',   require: false
 end
 
 group :development, :test do
