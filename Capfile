@@ -35,15 +35,16 @@ install_plugin Capistrano::SCM::Git
 # require "capistrano/passenger"
 
 # require 'capistrano/rails'
+require "capistrano/rbenv"
 require 'capistrano/rails/migrations'
 require 'capistrano/passenger'
-require 'capistrano/rvm'
+# require 'capistrano/rvm'
 
-# set :rbenv_type, :user
-# set :rbenv_ruby, '2.7.2'
-set :rvm_type, :user
-set :rvm_ruby, '2.7.2'
-set :rvm_custom_path, '/usr/share/rvm'  # only needed if not detected
+set :rbenv_type, :user
+set :rbenv_ruby, '2.7.2'
+# set :rvm_type, :user
+# set :rvm_ruby, '2.7.2'
+# set :rvm_custom_path, '/usr/share/rvm'  # only needed if not detected
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
