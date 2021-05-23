@@ -115,16 +115,6 @@ gem "vault", "~> 0.16" # Used to store secrets
 gem "wcag_color_contrast", "~> 0.1" # Detect contrast of colors to determine readability and a11y.
 gem "webpacker", "~> 5.4.0" # Use webpack to manage app-like JavaScript modules in Rails
 
-# added capistrano for production deployment
-gem "capistrano", "~> 3.11"
-gem "capistrano-passenger", "~> 0.2.0"
-gem "capistrano-rails", "~> 1.4"
-gem "capistrano-rvm", "~> 0.1.2"
-# gem "capistrano-rbenv", "~> 2.1", ">= 2.1.4"
-# Other support for capistrano
-gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
-gem "ed25519", ">= 1.2", "< 2.0"
-
 group :development do
   gem "better_errors", "~> 2.9" # Provides a better error page for Rails and other Rack apps
 
@@ -152,6 +142,14 @@ group :development do
   # gem 'capistrano-bundler', require: false
   # gem 'capistrano3-puma',   require: false
   # gem 'capistrano-passenger',   require: false
+  # added capistrano for production deployment
+  gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
+  gem "capistrano", "~> 3.16", require: false
+  gem "capistrano-bundler", "~> 2.0", ">= 2.0.1", require: false
+  gem "capistrano-rails", "~> 1.1", ">= 1.1.7", require: false
+  gem "capistrano-rvm", "~> 0.1.2", require: false
+  gem "capistrano3-puma", "~> 5.0", ">= 5.0.4", require: false
+  gem "ed25519", ">= 1.2", "< 2.0"
 end
 
 group :development, :test do
