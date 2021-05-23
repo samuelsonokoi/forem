@@ -75,7 +75,7 @@ docs/.static/api/
 .ruby-gemset
 
 # rbenv
-.rbenv-vars
+#.rbenv-vars
 
 # asdf
 .tool-versions
