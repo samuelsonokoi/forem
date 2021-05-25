@@ -115,6 +115,14 @@ gem "vault", "~> 0.16" # Used to store secrets
 gem "wcag_color_contrast", "~> 0.1" # Detect contrast of colors to determine readability and a11y.
 gem "webpacker", "~> 5.4.0" # Use webpack to manage app-like JavaScript modules in Rails
 
+# Capistrano
+gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
+gem "capistrano", "~> 3.16"
+gem "capistrano-passenger", "~> 0.2.1"
+gem "capistrano-rails", "~> 1.1", ">= 1.1.7"
+gem "capistrano-rbenv", "~> 2.2"
+gem "ed25519", ">= 1.2", "< 2.0"
+
 group :development do
   gem "better_errors", "~> 2.9" # Provides a better error page for Rails and other Rack apps
 
@@ -135,21 +143,6 @@ group :development do
   gem "yard", "~> 0.9.26" # YARD is a documentation generation tool for the Ruby programming language
   gem "yard-activerecord", "~> 0.0.16" # YARD extension that handles and interprets methods used when developing applications with ActiveRecord
   gem "yard-activesupport-concern", "~> 0.0.1" # YARD extension that brings support for modules making use of ActiveSupport::Concern
-  # capistrano configuration
-  # gem 'capistrano',         require: false
-  # gem 'capistrano-rbenv',     require: false
-  # gem 'capistrano-rails',   require: false
-  # gem 'capistrano-bundler', require: false
-  # gem 'capistrano3-puma',   require: false
-  # gem 'capistrano-passenger',   require: false
-  # added capistrano for production deployment
-  gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
-  gem "capistrano", "~> 3.16", require: false
-  gem "capistrano-bundler", "~> 2.0", ">= 2.0.1", require: false
-  gem "capistrano-rails", "~> 1.1", ">= 1.1.7", require: false
-  gem "capistrano-rvm", "~> 0.1.2", require: false
-  gem "capistrano3-puma", "~> 5.0", ">= 5.0.4", require: false
-  gem "ed25519", ">= 1.2", "< 2.0"
 end
 
 group :development, :test do
@@ -160,6 +153,7 @@ group :development, :test do
   gem "dotenv-rails", "~> 2.7.6" # For loading ENV variables locally
   gem "faker", "~> 2.18" # A library for generating fake data such as names, addresses, and phone numbers
   gem "knapsack_pro", "~> 2.16.0" # Help parallelize Ruby spec builds
+  gem "mini_portile2", "~> 2.5.0"
   gem "pry-byebug", "~> 3.8" # Combine 'pry' with 'byebug'. Adds 'step', 'next', 'finish', 'continue' and 'break' commands to control execution
   gem "rspec-rails", "~> 5.0" # rspec-rails is a testing framework for Rails 3+
   gem "rubocop", "~> 1.15", require: false # Automatic Ruby code style checking tool
