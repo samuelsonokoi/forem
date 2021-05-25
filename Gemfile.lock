@@ -894,7 +894,6 @@ DEPENDENCIES
   bullet (~> 6.1)
   bundler-audit (~> 0.8)
   capistrano (~> 3.16)
-  capistrano-bundler (~> 2.0, >= 2.0.1)
   capistrano-passenger (~> 0.2.1)
   capistrano-rails (~> 1.1, >= 1.1.7)
   capistrano-rbenv (~> 2.2)

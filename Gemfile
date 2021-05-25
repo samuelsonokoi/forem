@@ -116,9 +116,9 @@ gem "wcag_color_contrast", "~> 0.1" # Detect contrast of colors to determine rea
 gem "webpacker", "~> 5.4.0" # Use webpack to manage app-like JavaScript modules in Rails
 
 # Capistrano
+# gem "capistrano-bundler", "~> 2.0", ">= 2.0.1"
 gem "bcrypt_pbkdf", ">= 1.0", "< 2.0"
 gem "capistrano", "~> 3.16"
-gem "capistrano-bundler", "~> 2.0", ">= 2.0.1"
 gem "capistrano-passenger", "~> 0.2.1"
 gem "capistrano-rails", "~> 1.1", ">= 1.1.7"
 gem "capistrano-rbenv", "~> 2.2"
