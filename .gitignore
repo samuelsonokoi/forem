@@ -43,6 +43,7 @@ latest.dump
 yarn-debug.log*
 .yarn-integrity
 .env
+.rbenv-vars
 
 # Ignore storybook static site generation
 app/javascript/storybook-static/
