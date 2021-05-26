@@ -122,8 +122,6 @@ gem "capistrano", "~> 3.16"
 gem "capistrano-passenger", "~> 0.2.1"
 gem "capistrano-rails", "~> 1.1", ">= 1.1.7"
 gem "capistrano-rbenv", "~> 2.2"
-gem "capistrano-sidekiq", "~> 2.0"
-gem "capistrano3-puma", "~> 5.0", ">= 5.0.4"
 gem "ed25519", ">= 1.2", "< 2.0"
 
 group :development do
