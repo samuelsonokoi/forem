@@ -3,9 +3,10 @@ lock "~> 3.16.0"
 
 set :application, "sharply"
 set :repo_url, "git@github.com:samuelsonokoi/forem.git"
+set :branch, "samuelsonokoi/prod"
 
 # Default branch is :master
-ask :branch, `git rev-parse --abbrev-ref samuelsonokoi/prod`.chomp
+# ask :branch, `git rev-parse --abbrev-ref samuelsonokoi/prod`.chomp
 
 set :rbenv_type, :user
 set :rbenv_ruby, "2.7.2"
