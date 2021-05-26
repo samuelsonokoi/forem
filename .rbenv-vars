@@ -141,9 +141,9 @@ RECAPTCHA_SITE=
 
 # Slack for customer alerts
 # (https://api.slack.com/)
-SLACK_CHANNEL=""
+SLACK_CHANNEL="sharplyworkspace.slack.com"
 SLACK_DEPLOY_CHANNEL=""
-SLACK_WEBHOOK_URL=""
+SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 
 # For video calling in DEV Connect
 # (https://www.twilio.com/docs/video)
