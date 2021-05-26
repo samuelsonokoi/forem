@@ -65,7 +65,7 @@ RAILS_ENV="production"
 
 # Node
 # Set to 'production' when deploying for security and performance.
-NODE_ENV="production"
+NODE_ENV="development"
 
 ################################################
 ######### Optional 3rd Party Services ##########
