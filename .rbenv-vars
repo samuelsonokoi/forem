@@ -129,10 +129,10 @@ MAILCHIMP_API_KEY="Optional-valid"
 
 # Pusher for DEV Connect/notfications
 # (https://pusher.com/docs)
-PUSHER_APP_ID=
-PUSHER_CLUSTER=
-PUSHER_KEY=
-PUSHER_SECRET=
+PUSHER_APP_ID=1209847
+PUSHER_CLUSTER=mt1
+PUSHER_KEY=7e49ba17c16ac79d63e7
+PUSHER_SECRET=0dcda4ac1585fb56e4f3
 
 # Google recaptcha (Optional)
 # (https://developers.google.com/recaptcha/intro)
@@ -141,9 +141,9 @@ RECAPTCHA_SITE=
 
 # Slack for customer alerts
 # (https://api.slack.com/)
-SLACK_CHANNEL="sharplyworkspace.slack.com"
+SLACK_CHANNEL=sharplyworkspace.slack.com
 SLACK_DEPLOY_CHANNEL=""
-SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/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
 
 # For video calling in DEV Connect
 # (https://www.twilio.com/docs/video)
