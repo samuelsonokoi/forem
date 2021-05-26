@@ -4,13 +4,13 @@
 APP_DOMAIN="localhost:3000"
 APP_PROTOCOL="http://"
 FOREM_OWNER_SECRET="secret"
-SECRET_KEY_BASE="40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50"
+SECRET_KEY_BASE=40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50
 
 # Community Related Variables
 COMMUNITY_NAME="sharply.dev"
 
 # Email related variables
-DEFAULT_EMAIL="sharplydev@qurulab.com"
+DEFAULT_EMAIL=sharplydev@qurulab.com
 
 # Service timeout length
 RACK_TIMEOUT_WAIT_TIMEOUT=100_000
@@ -61,11 +61,11 @@ DATABASE_URL_TEST="postgresql://localhost:5432/Forem_test"
 
 # Rails
 # Set to 'production' when deploying for security and performance.
-RAILS_ENV="production"
+RAILS_ENV=production
 
 # Node
 # Set to 'production' when deploying for security and performance.
-NODE_ENV="production"
+NODE_ENV=production
 
 ################################################
 ######### Optional 3rd Party Services ##########
@@ -73,7 +73,7 @@ NODE_ENV="production"
 
 # Honeybadger for error tracking
 # (https://docs.honeybadger.io/lib/ruby/getting-started/introduction.html)
-HONEYBADGER_API_KEY="hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq"
+HONEYBADGER_API_KEY=hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq
 # HONEYBADGER_JS_API_KEY="Optional"
 
 # AWS for images storages
@@ -100,8 +100,8 @@ BUFFER_LISTINGS_PROFILE="Optional"
 
 # Cloudinary for image resizing and cache??
 # (https://cloudinary.com/documentation/rails_integration)
-CLOUDINARY_API_KEY="379454766645947"
-CLOUDINARY_API_SECRET="tj77UlbRCLHr2ylSk83dPvn4HlI"
+CLOUDINARY_API_KEY=379454766645947
+CLOUDINARY_API_SECRET=tj77UlbRCLHr2ylSk83dPvn4HlI
 # CLOUDINARY_CLOUD_NAME="Optional"
 # CLOUDINARY_SECURE="Optional"
 
@@ -112,8 +112,8 @@ HCTI_API_KEY="Optional"
 
 # Fastly for edge caching
 # (https://docs.fastly.com/api/)
-FASTLY_API_KEY="5Z2eB748WKdBNCQORdEmaz"
-FASTLY_SERVICE_ID="6AyfjySuMStTkYkoumMfUu"
+FASTLY_API_KEY=5Z2eB748WKdBNCQORdEmaz
+FASTLY_SERVICE_ID=6AyfjySuMStTkYkoumMfUu
 
 # Honeycomb for monitoring and observability
 # (https://www.honeycomb.io/)
