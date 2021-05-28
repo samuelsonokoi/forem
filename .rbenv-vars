@@ -2,7 +2,7 @@
 
 # App core values
 APP_DOMAIN="localhost:3000"
-APP_PROTOCOL="http://"
+APP_PROTOCOL="https://"
 FOREM_OWNER_SECRET="secret"
 SECRET_KEY_BASE=40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50
 
@@ -39,7 +39,7 @@ REDIS_RPUSH_URL=redis://localhost:6379
 OPENRESTY_URL=""
 
 # SSL config
-FORCE_SSL_IN_RAILS="not applicable in dev"
+FORCE_SSL_IN_RAILS=true
 
 # Postgres DB
 # Used when creating a db instance `rails db:create`
@@ -73,7 +73,7 @@ NODE_ENV=production
 
 # Honeybadger for error tracking
 # (https://docs.honeybadger.io/lib/ruby/getting-started/introduction.html)
-HONEYBADGER_API_KEY=hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq
+HONEYBADGER_API_KEY="hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq"
 # HONEYBADGER_JS_API_KEY="Optional"
 
 # AWS for images storages
