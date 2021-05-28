@@ -39,7 +39,7 @@ REDIS_RPUSH_URL=redis://localhost:6379
 OPENRESTY_URL=""
 
 # SSL config
-FORCE_SSL_IN_RAILS=true
+FORCE_SSL_IN_RAILS="true"
 
 # Postgres DB
 # Used when creating a db instance `rails db:create`
@@ -117,7 +117,7 @@ FASTLY_SERVICE_ID=6AyfjySuMStTkYkoumMfUu
 
 # Honeycomb for monitoring and observability
 # (https://www.honeycomb.io/)
-HONEYCOMB_API_KEY=""
+HONEYCOMB_API_KEY=1c0882b91524d72d8bc84890a0ad5516
 
 # Google analytics
 # (https://developers.google.com/analytics/devguides/reporting/core/v4)
