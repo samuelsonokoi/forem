@@ -178,5 +178,6 @@ end
 # rubocop:enable Metrics/BlockLength
 
 Rails.application.routes.default_url_options = {
-  protocol: (ENV["APP_PROTOCOL"] || "http://").delete_suffix("://")
+  protocol: ("https://").delete_suffix("://")
+  # protocol: (ENV["APP_PROTOCOL"] || "http://").delete_suffix("://")
 }
