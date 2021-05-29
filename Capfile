@@ -34,6 +34,7 @@ require "capistrano/rails/migrations"
 require "capistrano/rbenv"
 require "capistrano/passenger"
 require "capistrano/rails"
+require "capistrano/webpacker/precompile"
 # require 'capistrano/sidekiq'
 # install_plugin Capistrano::Sidekiq 
 # require 'capistrano3/nginx'

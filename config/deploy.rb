@@ -14,6 +14,13 @@ set :rbenv_ruby, "2.7.2"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
+# Default value for linked_dirs is []
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", ".bundle", "public/system",
+       "public/uploads"
+
+# capistrano-rails config
+after "deploy:updated", "webpacker:precompile"
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
@@ -26,10 +33,6 @@ set :deploy_to, "/home/deploy/#{fetch :application}"
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
-
-# Default value for linked_dirs is []
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", ".bundle", "public/system",
-       "public/uploads"
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
