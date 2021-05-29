@@ -38,6 +38,11 @@ environment.loaders.delete('nodeModules');
 
 environment.loaders.append('erb', erb);
 
+// Save compile time by disabling an unused compression (not present in tests)
+if (environment.plugins.getIndex('Compression Brotli') >= 0) {
+  environment.plugins.delete('Compression Brotli');
+}
+
 if (process.env.HONEYBADGER_API_KEY && process.env.ASSETS_URL) {
   environment.plugins.append(
     'HoneybadgerSourceMap',

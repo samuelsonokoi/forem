@@ -19,7 +19,14 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
        "public/uploads"
 
 # capistrano-rails config
-after "deploy:updated", "webpacker:precompile"
+set :assets_roles, %i[webpack] # Give the webpack role to a single server
+set :assets_prefix, "packs" # Assets are located in /packs/
+set :keep_assets, 10 # Automatically remove stale assets
+set :assets_manifests, lambda { # Tell Capistrano-Rails how to find the Webpacker manifests
+  [release_path.join("public", fetch(:assets_prefix), "manifest.json*")]
+}
+
+set :conditionally_migrate, true
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -37,7 +44,7 @@ after "deploy:updated", "webpacker:precompile"
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
-# Default value for local_user is ENV['USER']
+# Default value for local_user is ENV["USER"]
 # set :local_user, -> { `git config user.name`.chomp }
 
 # Default value for keep_releases is 5
