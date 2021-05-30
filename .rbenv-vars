@@ -1,13 +1,13 @@
 # Development options
 
 # App core values
-APP_DOMAIN="localhost:3000"
+APP_DOMAIN=sharply.dev
 APP_PROTOCOL=https://
 FOREM_OWNER_SECRET=gkLwthJgHoaG6f2dyHUo4ZZg
 SECRET_KEY_BASE=40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50
 
 # Community Related Variables
-COMMUNITY_NAME="sharply.dev"
+COMMUNITY_NAME=sharply.dev
 
 # Email related variables
 DEFAULT_EMAIL=sharplydev@qurulab.com
@@ -39,16 +39,15 @@ REDIS_RPUSH_URL=redis://localhost:6379
 OPENRESTY_URL=""
 
 # SSL config
-FORCE_SSL_IN_RAILS="true"
+FORCE_SSL_IN_RAILS=true
 
 # Postgres DB
 # Used when creating a db instance `rails db:create`
 DATABASE_NAME="Forem_development"
 # This takes precedence over `DATABASE_NAME` if they don't match
-# DATABASE_URL="postgresql://localhost:5432/Forem_development"
-#DATABASE_URL=postgresql://deploy:pa55w0rd12345@localhost/Forem_development
-# DATABASE_URL=postgresql://deploy:pa55w0rd12345@157.230.185.166/Forem_development"
-DATABASE_URL=postgresql://deploy:pa55w0rd12345@127.0.0.1/Forem_development
+DATABASE_URL="postgresql://deploy:pa55w0rd12345@localhost:5432/$DATABASE_NAME"
+DATABASE_URL_TEST="postgresql://deploy:pa55w0rd12345k@localhost:5432/$DATABASE_NAME_TEST"
+# DATABASE_URL=postgresql://deploy:pa55w0rd12345@127.0.0.1/Forem_development
 # Specifies the number of Puma threads
 RAILS_MAX_THREADS=5
 # Specifies the number of `workers` to boot in clustered mode.
@@ -57,7 +56,7 @@ WEB_CONCURRENCY=2
 DATABASE_POOL_SIZE=5
 DATABASE_NAME_TEST=Forem_test
 # Differentiate test db from dev db. Test DB is wiped on each test run.
-DATABASE_URL_TEST="postgresql://localhost:5432/Forem_test"
+# DATABASE_URL_TEST="postgresql://localhost:5432/Forem_test"
 
 # Rails
 # Set to 'production' when deploying for security and performance.
@@ -73,8 +72,13 @@ NODE_ENV=production
 
 # Honeybadger for error tracking
 # (https://docs.honeybadger.io/lib/ruby/getting-started/introduction.html)
-HONEYBADGER_API_KEY="hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq"
+HONEYBADGER_API_KEY=hbp_taUFR6w46RForjGXUWyDAb5M3wLip13c4Keq
 # HONEYBADGER_JS_API_KEY="Optional"
+
+# image proxy
+IMGPROXY_ENDPOINT='http://localhost:8080'
+IMGPROXY_KEY='d6c85ce78a0d51a894c7ce7b4429e50de12ca710474ea3e240aedb4f53ad8ec306d58af3f90040e8985b900c581b8555f2bc58c29ae0b3b425878fdc6325672b'
+IMGPROXY_SALT='72baa86722b951a24301fd2c369ede30515f55482086169a94b25a36a95c709cabe9ef87625d5dcbb8073300f1d0105c4b177a2d84aecf61dfc67bafb5604226'
 
 # AWS for images storages
 AWS_ID="Optional"
