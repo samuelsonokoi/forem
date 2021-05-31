@@ -21,25 +21,25 @@ HEROKU_RELEASE_CREATED_AT=""
 HEROKU_SLUG_COMMIT=""
 
 # Redis caching storage
-REDIS_URL="redis://localhost:6379"
+REDIS_URL=redis://localhost:6379
 
 # Redis sessions storage
-REDIS_SESSIONS_URL="redis://localhost:6379"
+REDIS_SESSIONS_URL=redis://localhost:6379
 SESSION_KEY="_Dev_Community_Session"
 # two weeks in seconds
 SESSION_EXPIRY_SECONDS=1209600
 
 # Redis Sidekiq storage
-REDIS_SIDEKIQ_URL="redis://localhost:6379"
+REDIS_SIDEKIQ_URL=redis://localhost:6379
 
 # Redis Devices/Rpush storage
-REDIS_RPUSH_URL="redis://localhost:6379"
+REDIS_RPUSH_URL=redis://localhost:6379
 
 # OpenResty
 OPENRESTY_URL=""
 
 # SSL config
-FORCE_SSL_IN_RAILS="true"
+FORCE_SSL_IN_RAILS=true
 
 # Postgres DB
 # Used when creating a db instance `rails db:create`
@@ -58,11 +58,11 @@ DATABASE_URL_TEST=postgresql://deploy:pa55w0rd12345k@localhost:5432/Forem_test
 
 # Rails
 # Set to 'production' when deploying for security and performance.
-RAILS_ENV=development
+RAILS_ENV=production
 
 # Node
 # Set to 'production' when deploying for security and performance.
-NODE_ENV=development
+NODE_ENV=production
 
 ################################################
 ######### Optional 3rd Party Services ##########
