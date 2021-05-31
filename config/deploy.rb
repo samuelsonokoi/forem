@@ -21,12 +21,17 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 # capistrano-rails config
 set :assets_roles, %i[webpack] # Give the webpack role to a single server
 set :assets_prefix, "packs" # Assets are located in /packs/
-set :keep_assets, 10 # Automatically remove stale assets
+set :keep_assets, 5 # Automatically remove stale assets
 set :assets_manifests, lambda { # Tell Capistrano-Rails how to find the Webpacker manifests
   [release_path.join("public", fetch(:assets_prefix), "manifest.json*")]
 }
 
-set :conditionally_migrate, true
+set :sidekiq_roles, :app
+set :sidekiq_default_hooks, true
+set :sidekiq_pid, File.join(shared_path, "tmp", "pids", "sidekiq.pid")
+set :sidekiq_env, fetch(:rack_env, fetch(:rails_env, fetch(:stage)))
+set :sidekiq_log, File.join(shared_path, "log", "sidekiq.log")
+set :sidekiq_user, nil
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
