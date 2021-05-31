@@ -85,7 +85,7 @@ production:
   <<: *default
 
   # webpacker production
-  source_entry_path: packs_production
+  # source_entry_path: packs_production
 
   # Production depends on precompilation of packs prior to booting for performance.
   compile: true
