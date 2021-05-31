@@ -175,7 +175,7 @@ export class FollowUsers extends Component {
             </header>
 
             <fieldset data-testid="onboarding-users">
-              {users.map((user) => {
+              {users.map((user, i) => {
                 const selected = selectedUsers.includes(user);
 
                 return (
@@ -184,6 +184,7 @@ export class FollowUsers extends Component {
                     className={`user content-row ${
                       selected ? 'selected' : 'unselected'
                     }`}
+                    key={i}
                   >
                     <figure className="user-avatar-container">
                       <img
