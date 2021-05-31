@@ -1,13 +1,13 @@
 # Development options
 
 # App core values
-APP_DOMAIN=sharply.dev
+APP_DOMAIN=localhost:3000
 APP_PROTOCOL=https://
 FOREM_OWNER_SECRET=gkLwthJgHoaG6f2dyHUo4ZZg
 SECRET_KEY_BASE=40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50
 
 # Community Related Variables
-COMMUNITY_NAME=sharply.dev
+COMMUNITY_NAME=Sharply
 
 # Email related variables
 DEFAULT_EMAIL=sharplydev@qurulab.com
@@ -21,33 +21,31 @@ HEROKU_RELEASE_CREATED_AT=""
 HEROKU_SLUG_COMMIT=""
 
 # Redis caching storage
-REDIS_URL=redis://localhost:6379
+REDIS_URL="redis://localhost:6379"
 
 # Redis sessions storage
-REDIS_SESSIONS_URL=redis://localhost:6379
+REDIS_SESSIONS_URL="redis://localhost:6379"
 SESSION_KEY="_Dev_Community_Session"
 # two weeks in seconds
 SESSION_EXPIRY_SECONDS=1209600
 
 # Redis Sidekiq storage
-REDIS_SIDEKIQ_URL=redis://localhost:6379
+REDIS_SIDEKIQ_URL="redis://localhost:6379"
 
 # Redis Devices/Rpush storage
-REDIS_RPUSH_URL=redis://localhost:6379
+REDIS_RPUSH_URL="redis://localhost:6379"
 
 # OpenResty
 OPENRESTY_URL=""
 
 # SSL config
-FORCE_SSL_IN_RAILS=true
+FORCE_SSL_IN_RAILS="true"
 
 # Postgres DB
 # Used when creating a db instance `rails db:create`
 DATABASE_NAME=Forem_development
 # This takes precedence over `DATABASE_NAME` if they don't match
 DATABASE_URL=postgresql://deploy:pa55w0rd12345@localhost:5432/Forem_development
-DATABASE_URL_TEST=postgresql://deploy:pa55w0rd12345k@localhost:5432/Forem_test
-# DATABASE_URL=postgresql://deploy:pa55w0rd12345@127.0.0.1/Forem_development
 # Specifies the number of Puma threads
 RAILS_MAX_THREADS=5
 # Specifies the number of `workers` to boot in clustered mode.
@@ -56,7 +54,7 @@ WEB_CONCURRENCY=2
 DATABASE_POOL_SIZE=5
 DATABASE_NAME_TEST=Forem_test
 # Differentiate test db from dev db. Test DB is wiped on each test run.
-# DATABASE_URL_TEST="postgresql://localhost:5432/Forem_test"
+DATABASE_URL_TEST=postgresql://deploy:pa55w0rd12345k@localhost:5432/Forem_test
 
 # Rails
 # Set to 'production' when deploying for security and performance.
