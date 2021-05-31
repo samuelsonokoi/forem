@@ -26,7 +26,9 @@ set :assets_manifests, lambda { # Tell Capistrano-Rails how to find the Webpacke
   [release_path.join("public", fetch(:assets_prefix), "manifest.json*")]
 }
 
-# set :conditionally_migrate, true
+set :conditionally_migrate, true
+
+before "deploy:assets:precompile", "deploy:migrate"
 
 # set :sidekiq_roles, :app
 # set :sidekiq_default_hooks, true
