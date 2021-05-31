@@ -26,12 +26,12 @@ set :assets_manifests, lambda { # Tell Capistrano-Rails how to find the Webpacke
   [release_path.join("public", fetch(:assets_prefix), "manifest.json*")]
 }
 
-set :sidekiq_roles, :app
-set :sidekiq_default_hooks, true
-set :sidekiq_pid, File.join(shared_path, "tmp", "pids", "sidekiq.pid")
-set :sidekiq_env, fetch(:rack_env, fetch(:rails_env, fetch(:stage)))
-set :sidekiq_log, File.join(shared_path, "log", "sidekiq.log")
-set :sidekiq_user, nil
+# set :sidekiq_roles, :app
+# set :sidekiq_default_hooks, true
+# set :sidekiq_pid, File.join(shared_path, "tmp", "pids", "sidekiq.pid")
+# set :sidekiq_env, fetch(:rack_env, fetch(:rails_env, fetch(:stage)))
+# set :sidekiq_log, File.join(shared_path, "log", "sidekiq.log")
+# set :sidekiq_user, nil
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
