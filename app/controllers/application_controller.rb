@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   skip_before_action :track_ahoy_visit
-  # before_action :verify_private_forem
+  before_action :verify_private_forem
   protect_from_forgery with: :exception, prepend: true
   before_action :remember_cookie_sync
   before_action :forward_to_app_config_domain
