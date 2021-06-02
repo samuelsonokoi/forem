@@ -20,7 +20,7 @@
           </ul>
         </div>
       </div>
-    <% elsif true %>
+    <% elsif forem_creator_flow_enabled? %>
       <%# TODO: Extract this into its own form %>
       <div class="align-center">
         <p class="pb-4 fw-bold">Almost there!</p>
@@ -108,7 +108,7 @@
       </div>
     <% end %>
 
-    <% if true %>
+    <% if forem_creator_flow_enabled? %>
       <%# TODO: Extract this into its own form %>
       <div class="flex flex-col pt-3">
         <%= f.submit "Create admin account", class: "crayons-btn" %>
