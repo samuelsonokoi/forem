@@ -108,15 +108,9 @@
       </div>
     <% end %>
 
-    <% if forem_creator_flow_enabled? %>
-      <%# TODO: Extract this into its own form %>
-      <div class="flex flex-col pt-3">
-        <%= f.submit "Create admin account", class: "crayons-btn" %>
-      </div>
-    <% else %>
-      <div class="actions pt-3">
-        <%= f.submit "Sign up", class: "crayons-btn" %>
-      </div>
-    <% end %>
+    <div class="flex flex-col pt-3">
+      <%= f.submit "Create admin account", class: "crayons-btn" %>
+    </div>
+
   <% end %>
 </div>
