@@ -3,7 +3,7 @@
 # App core values
 APP_DOMAIN=sharply.dev
 APP_PROTOCOL=https://
-FOREM_OWNER_SECRET=BTxaemvHmcyQ1eAA+P+gdSvoJsTe1+jMUmiEjGeifAHMVpUXXRbacD5+aGHuv+HBYPZo+NW6OS7LSFfEWp6CoA==
+FOREM_OWNER_SECRET=BTxaemvHmcyQ1eAA+P+gdSvoJsTe1+jMUmiEjGeifAHMVpUXXRbacD5+aGHuv+HBYPZ+NW6OS7LSFfEWp6CoA==
 SECRET_KEY_BASE=40b679ac70e6026b45bc8459a8001176347211e9ca6b477878889a0398bf782da90376bc8b522e3942c1569ea5bc4fe6e5056cc6bfaedb304790397af8440c50
 
 # Community Related Variables
@@ -41,11 +41,14 @@ OPENRESTY_URL=""
 # SSL config
 FORCE_SSL_IN_RAILS=true
 
+# Enabe hypershield
+ENABLE_HYPERSHIELD=true
+
 # Postgres DB
 # Used when creating a db instance `rails db:create`
-DATABASE_NAME=Forem_development
+DATABASE_NAME=Forem_production
 # This takes precedence over `DATABASE_NAME` if they don't match
-DATABASE_URL=postgresql://deploy:pa55w0rd12345@localhost:5432/Forem_development
+DATABASE_URL=postgresql://deploy:pa55w0rd12345@localhost:5432/Forem_production
 # Specifies the number of Puma threads
 RAILS_MAX_THREADS=5
 # Specifies the number of `workers` to boot in clustered mode.
