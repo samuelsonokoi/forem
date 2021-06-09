@@ -20,8 +20,7 @@ module Settings
     field :admin_action_taken_at, type: :datetime, default: Time.current
 
     # Core setup
-    # field :waiting_on_first_user, type: :boolean, default: !User.exists?
-    field :waiting_on_first_user, type: :boolean, default: false
+    field :waiting_on_first_user, type: :boolean, default: !User.exists?
     field :app_domain, type: :string, default: ApplicationConfig["APP_DOMAIN"]
 
     # API Tokens
