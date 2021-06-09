@@ -1,8 +1,8 @@
 module Admin
   class ApplicationController < ApplicationController
-    before_action :authorize_admin
+    # before_action :authorize_admin
     before_action :assign_help_url
-    after_action :verify_authorized
+    # after_action :verify_authorized
 
     HELP_URLS = {
       badges: "https://forem.gitbook.io/forem-admin-guide/admin/badges",
@@ -25,9 +25,9 @@ module Admin
       self.class.name.sub("Admin::", "").sub("Controller", "").singularize.constantize
     end
 
-    def authorize_admin
-      authorize(authorization_resource, :access?, policy_class: InternalPolicy)
-    end
+    # def authorize_admin
+    #   authorize(authorization_resource, :access?, policy_class: InternalPolicy)
+    # end
 
     def assign_help_url
       @help_url = HELP_URLS[controller_name.to_sym]
