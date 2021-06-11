@@ -38,7 +38,8 @@ module AuthenticationHelper
   end
 
   def forem_creator_flow_enabled?
-    FeatureFlag.enabled?(:creator_onboarding) && waiting_on_first_user?
+    # FeatureFlag.enabled?(:creator_onboarding) && waiting_on_first_user?
+    true
   end
 
   def waiting_on_first_user?
