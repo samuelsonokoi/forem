@@ -160,15 +160,7 @@ RSpec.describe ApplicationHelper, type: :helper do
     let(:contact_email) { "contact@dev.to" }
 
     before do
-      allow(SiteConfig).to receive(:email_addresses).and_return(
-        {
-          default: "hi@dev.to",
-          contact: contact_email,
-          business: "business@dev.to",
-          privacy: "privacy@dev.to",
-          members: "members@dev.to"
-        },
-      )
+      allow(ForemInstance).to receive(:email).and_return(default_email)
     end
 
     it "returns an 'a' tag" do

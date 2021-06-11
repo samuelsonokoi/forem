@@ -194,10 +194,8 @@ module ApplicationHelper
     link_to body, collection.path, **kwargs
   end
 
-  def email_link(type = :contact, text: nil, additional_info: nil)
-    # The allowed types for type are the keys of `SiteConfig.email_addresses`
-    # :default, :contact, :business, :privacy, :members
-    email = SiteConfig.email_addresses[type] || SiteConfig.email_addresses[:contact]
+  def email_link(text: nil, additional_info: nil)
+    email = ForemInstance.email
     mail_to email, text || email, additional_info
   end
 
