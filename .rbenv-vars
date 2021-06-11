@@ -125,7 +125,7 @@ GA_TRACKING_ID="Optional"
 
 # Mailchimp for mails
 # (https://mailchimp.com/developer/)
-MAILCHIMP_API_KEY="Optional-valid"
+MAILCHIMP_API_KEY=7b4cb41352263d04ce7859c413da2a48-us6
 
 # Pusher for DEV Connect/notfications
 # (https://pusher.com/docs)

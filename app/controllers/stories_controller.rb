@@ -296,6 +296,7 @@ class StoriesController < ApplicationController
 
     @article_show = true
 
+    @discussion_lock = @article.discussion_lock
     @user = @article.user
     @organization = @article.organization
 

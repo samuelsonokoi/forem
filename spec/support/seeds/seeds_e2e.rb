@@ -215,3 +215,31 @@ seeder.create_if_none(Tag) do
 end
 
 ##############################################################################
+
+seeder.create_if_none(Badge) do
+  Badge.create!(
+    title: "#{Faker::Lorem.word} #{rand(100)}",
+    description: Faker::Lorem.sentence,
+    badge_image: File.open(Rails.root.join("app/assets/images/#{rand(1..40)}.png")),
+  )
+
+  admin_user.badge_achievements.create!(
+    badge: Badge.first,
+    rewarding_context_message_markdown: Faker::Markdown.random,
+  )
+end
+
+##############################################################################
+
+seeder.create_if_none(Page) do
+  2.times do
+    Page.create!(
+      slug: Faker::Lorem.word,
+      body_html: "<p>#{Faker::Hipster.paragraph(sentence_count: 2)}</p>",
+      title: "#{Faker::Lorem.word} #{rand(100)}",
+      description: "A test page",
+      is_top_level_path: true,
+      landing_page: false,
+    )
+  end
+end
