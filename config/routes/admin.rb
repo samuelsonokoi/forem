@@ -20,6 +20,7 @@ namespace :admin do
     resources :communities, only: [:create]
     resources :mandatory_settings, only: [:create]
     resources :rate_limits, only: [:create]
+    resources :smtp_settings, only: [:create]
     resources :user_experiences, only: [:create]
   end
   namespace :users do

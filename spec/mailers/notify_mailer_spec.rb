@@ -292,6 +292,8 @@ RSpec.describe NotifyMailer, type: :mailer do
     end
 
     it "tracks the feedback message ID after delivery" do
+      user # Instantiate user to pre-generate welcome email
+      allow(ForemInstance).to receive(:smtp_enabled?).and_return(true)
       assert_emails 1 do
         email.deliver_now
       end
@@ -300,6 +302,8 @@ RSpec.describe NotifyMailer, type: :mailer do
     end
 
     it "tracks the email_type as the UTM campaign" do
+      user # Instantiate user to pre-generate welcome email
+      allow(ForemInstance).to receive(:smtp_enabled?).and_return(true)
       assert_emails 1 do
         email.deliver_now
       end

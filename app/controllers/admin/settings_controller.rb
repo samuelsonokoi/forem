@@ -1,8 +1,8 @@
 module Admin
   class SettingsController < Admin::ApplicationController
-    MISMATCH_ERROR = "The confirmation key does not match".freeze
-
-    before_action :extra_authorization_and_confirmation, only: [:create]
+    # NOTE: The "show" action uses a lot of partials, this makes it easier to
+    # reference them.
+    prepend_view_path("app/views/admin/settings")
 
     layout "admin"
 
