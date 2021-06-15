@@ -7,8 +7,8 @@ set :repo_url, "git@github.com:samuelsonokoi/forem.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref samuelsonokoi/prod`.chomp
-set :branch, "samuelsonokoi/prod"
-# set :branch, "main"
+# set :branch, "samuelsonokoi/prod"
+set :branch, "main"
 
 set :rbenv_type, :user
 set :rbenv_ruby, "2.7.2"
