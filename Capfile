@@ -34,13 +34,6 @@ require "capistrano/rails/migrations"
 require "capistrano/rbenv"
 # require "capistrano/rails"
 require "capistrano/passenger"
-# require "capistrano/webpacker/precompile"
-# require 'capistrano/sidekiq'
-# install_plugin Capistrano::Sidekiq
-# require 'capistrano/sidekiq'
-# install_plugin Capistrano::Sidekiq 
-# require 'capistrano3/nginx'
-# install_plugin Capistrano::Nginx
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
