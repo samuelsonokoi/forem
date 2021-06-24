@@ -1,5 +1,7 @@
 class DeviseMailer < Devise::Mailer
-  before_action :use_site_config_values
+  include Deliverable
+
+  before_action :use_settings_general_values
 
   def use_site_config_values
     Devise.mailer_sender =
